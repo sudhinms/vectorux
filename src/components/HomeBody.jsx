@@ -13,9 +13,30 @@ const Container=styled.div`
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    .mainrow1{
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+    }
+    .mainrow2{
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+    }
     @media screen and (max-width:550px ){
-    
+        height: 70vh;
+        display: grid;
+        .mainrow1{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+        .mainrow2{
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 5vh;
+        }
         img{
             height: 40px;
             width: 30px;
@@ -76,13 +97,18 @@ const Container=styled.div`
         font-family: Montserrat;
         margin: 5px;
     }
+    @media screen and (max-width:550px ){
+      .cards{
+        width: 30vw;
+      }
+    }
 `
 
 function HomeBody() {
-    const divCount=4;
-    const cardHolder=[];
+
   return (
     <Container className='main'>
+      <div className='mainrow1'>
       <div className="cards">
         <img src={cardIcon1} alt="" className='image'/>
         <h3>UI & UX</h3>
@@ -96,6 +122,8 @@ function HomeBody() {
         <p>
         Transforming ideas into exceptional web and mobile app experiences.        </p>
       </div>
+      </div>
+      <div className='mainrow2'>
       <div className="cards">
       <img src={cardIcon3} alt="" className='image'/>
         <h3>Design & Creative</h3>
@@ -107,6 +135,7 @@ function HomeBody() {
         <h3>Development</h3>
         <p>
         Bringing your vision to life with the latest technology and design trends.        </p>
+      </div>
       </div>
     </Container>
   )

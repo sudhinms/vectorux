@@ -3,7 +3,7 @@ import { styled } from 'styled-components'
 
 const Container=styled.div`
 width: 100%;
-height: 60vh;
+height: 80vh;
 background-color: #191A1D;
 display: flex;
 justify-content: end;

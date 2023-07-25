@@ -219,6 +219,9 @@ const Container=styled.div`
         align-items: center;
         margin-top: 20px;
     }
+    .cards{
+      width: 40vw;
+    }
   }
   
 `

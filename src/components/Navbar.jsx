@@ -35,6 +35,7 @@ const Container=styled.div`
     @media screen and (max-width:600px ){
         .icon{
             display: flex;
+            margin-bottom: 40px;
         }
         .links{
             display: none;
@@ -75,8 +76,8 @@ const Container=styled.div`
         margin-top: 5px;
     }
     .fa-bars{
-        height: 15px;
-        width: 10px;
+        height: 10px;
+        width: 9px;
         margin-right: 40px;
     }
 
@@ -89,7 +90,7 @@ function Navbar() {
   return (
   <Container stateval={state}>
     {/* <div className="nav_main"> */}
-      <div className="logo">LOGO</div>
+      <div className="logo"></div>
       <div className="links">
           <div className="link1">Home</div>
           <div className="link1">About</div>
